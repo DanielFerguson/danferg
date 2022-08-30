@@ -1,0 +1,179 @@
+---
+// Props
+
+const { frontmatter } = Astro.props;
+
+// Components
+import { Image } from "@astrojs/image/components";
+import BaseLayout from "./BaseLayout.astro";
+import WaveIcon from "../images/wave.png";
+
+// Data
+const navigation = [
+    { name: "Projects", href: "/projects" },
+    { name: "Talks", href: "/#talks" },
+    { name: "Articles", href: "/articles" },
+    { name: "Newsletters", href: "/newsletters" },
+];
+---
+
+<BaseLayout
+    title={frontmatter.title}
+    description={frontmatter.description}
+    imageUrl={frontmatter.imageUrl}
+>
+    <!-- Section: Navigation -->
+    <header>
+        <div
+            class="flex justify-between items-center max-w-7xl mx-auto px-4 py-6 sm:px-6 md:justify-start md:space-x-10 lg:px-8"
+        >
+            <div class="flex justify-start lg:w-0 lg:flex-1">
+                <a href="/">
+                    <span class="sr-only">DanFerg</span>
+                    <Image
+                        alt="Dan Ferg"
+                        class="h-8 w-auto sm:h-10"
+                        src={WaveIcon}
+                        format="avif"
+                    />
+                </a>
+            </div>
+            <nav class="hidden md:flex space-x-10">
+                {
+                    navigation.map((item) => (
+                        <a
+                            href={item.href}
+                            class="text-base font-medium text-gray-500 hover:text-gray-900"
+                        >
+                            {item.name}
+                        </a>
+                    ))
+                }
+                <a
+                    href="/contact"
+                    class="font-medium text-indigo-600 hover:text-indigo-500"
+                >
+                    Hire me!
+                </a>
+            </nav>
+            <div
+                class="hidden md:flex items-center justify-end md:flex-1 lg:w-0"
+            >
+            </div>
+        </div>
+    </header>
+
+    <!-- Section: Hero -->
+    <div>
+        <main class="relative">
+            <div class="absolute inset-x-0 bottom-0 h-1/2"></div>
+            <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+                <div
+                    class="relative shadow-xl sm:rounded-2xl sm:overflow-hidden"
+                >
+                    <div class="absolute inset-0">
+                        <Image
+                            class="h-full w-full object-cover"
+                            src={frontmatter.imageUrl}
+                            height={200}
+                            aspectRatio={16 / 9}
+                            alt="People working on laptops"
+                        />
+                        <div
+                            class="absolute inset-0 bg-indigo-700 mix-blend-multiply"
+                        >
+                        </div>
+                    </div>
+                    <div
+                        class="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8"
+                    >
+                        <h1
+                            class="text-center text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl text-white"
+                        >
+                            {frontmatter.title}
+                        </h1>
+                        <p
+                            class="mt-6 max-w-lg mx-auto text-center text-xl text-indigo-200 sm:max-w-3xl"
+                        >
+                            {frontmatter.description}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Section: Breadcrumbs -->
+    <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mt-8 mb-12">
+        <nav class="flex" aria-label="Breadcrumb">
+            <ol role="list" class="flex items-center space-x-4">
+                <li>
+                    <div>
+                        <a href="/" class="text-gray-400 hover:text-gray-500">
+                            <svg
+                                class="h-5 w-5 flex-shrink-0"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 20 20"
+                                fill="currentColor"
+                                aria-hidden="true"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    d="M9.293 2.293a1 1 0 011.414 0l7 7A1 1 0 0117 11h-1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-3a1 1 0 00-1-1H9a1 1 0 00-1 1v3a1 1 0 01-1 1H5a1 1 0 01-1-1v-6H3a1 1 0 01-.707-1.707l7-7z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="sr-only">Home</span>
+                        </a>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="flex items-center">
+                        <svg
+                            class="h-5 w-5 flex-shrink-0 text-gray-300"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            viewBox="0 0 20 20"
+                            aria-hidden="true"
+                        >
+                            <path
+                                d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z"
+                            ></path>
+                        </svg>
+                        <a
+                            href="/newsletters"
+                            class="ml-4 text-sm font-medium text-gray-500 hover:text-gray-700"
+                            >Newsletters</a
+                        >
+                    </div>
+                </li>
+
+                <li>
+                    <div class="flex items-center">
+                        <svg
+                            class="h-5 w-5 flex-shrink-0 text-gray-300"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            viewBox="0 0 20 20"
+                            aria-hidden="true"
+                        >
+                            <path
+                                d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z"
+                            ></path>
+                        </svg>
+                        <p
+                            class="ml-4 text-sm font-medium text-gray-500"
+                            aria-current="page"
+                        >
+                            {frontmatter.title}
+                        </p>
+                    </div>
+                </li>
+            </ol>
+        </nav>
+    </div>
+
+    <div class="prose mx-auto px-8 md:px-0 pb-16">
+        <slot />
+    </div>
+</BaseLayout>

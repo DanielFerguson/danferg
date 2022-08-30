@@ -1,0 +1,41 @@
+---
+import { Image } from "@astrojs/image/components";
+
+import WaveIcon from "@images/wave.png";
+
+const navigation = [
+    { name: "Projects", href: "/#projects" },
+    { name: "Work", href: "/#work" },
+    { name: "Talks", href: "/#talks" },
+    { name: "Articles", href: "#" },
+    { name: "Newsletters", href: "/newsletters" },
+];
+---
+
+<div
+    class="flex justify-between items-center px-4 py-6 sm:px-6 md:justify-start md:space-x-10"
+>
+    <a class="flex" href="/">
+        <span class="sr-only">Dan Ferg</span>
+        <Image
+            alt="Dan Ferg"
+            class="h-8 w-auto sm:h-10"
+            src={WaveIcon}
+            format="avif"
+        />
+    </a>
+    <div class="hidden md:flex-1 md:flex md:items-center md:justify-between">
+        <nav class="flex space-x-10">
+            {
+                navigation.map((link) => (
+                    <a
+                        href={link.href}
+                        class="text-base font-medium text-gray-500 hover:text-gray-900"
+                    >
+                        {link.name}
+                    </a>
+                ))
+            }
+        </nav>
+    </div>
+</div>
