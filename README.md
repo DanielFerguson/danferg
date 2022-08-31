@@ -18,7 +18,8 @@
 ### Stage 2
 
 - [x] Re-add SEO tags
-- [ ] /mentorship
+- [~] /mentorship
+- [ ] /contact
 - [ ] Project pages
     - [ ] yFocus
     - [ ] Observer

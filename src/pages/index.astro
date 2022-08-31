@@ -1,9 +1,9 @@
 ---
 // Types
-import type Article from "@types/Article";
-import type Project from "@types/Project";
-import type Talk from "@types/Talk";
-import type SEO from "@types/SEO";
+import type Article from "types/Article";
+import type Project from "types/Project";
+import type Talk from "types/Talk";
+import type SEO from "types/SEO";
 
 // Components
 import dayjs from "dayjs";
@@ -12,10 +12,10 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import Newsletter from "@components/Newsletter.astro";
 
 // Assets
-import HeroImage from "@images/danferg.jpg";
+import HeroImage from "@images/danferg.webp";
 import WaveIcon from "@images/wave.png";
 import ConceptToProduction from "@images/talks/concept-to-production.png";
-import NoCode from "@images/danferg.jpg";
+import NoCode from "@images/danferg.webp";
 import SwinLead from "@images/talks/swinlead.png";
 
 // Data
@@ -268,10 +268,7 @@ const talks: Array<Talk> = [
 		</div>
 
 		<!-- Section: Articles -->
-		<div
-			id="articles"
-			class="bg-white px-4 pt-16 pb-20 sm:px-6 lg:px-8 lg:pt-24 lg:pb-28"
-		>
+		<div id="articles" class="bg-white px-4 pt-16 pb-12 sm:px-6 lg:px-8">
 			<div
 				class="relative mx-auto divide-y-2 divide-gray-200 lg:max-w-7xl"
 			>

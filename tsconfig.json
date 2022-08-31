@@ -4,6 +4,10 @@
     "types": [
       "@astrojs/image/client"
     ],
+    "target": "ESNext",
+    "module": "ESNext",
+    "isolatedModules": true,
+    "importsNotUsedAsValues": "error",
     "baseUrl": ".",
     "paths": {
       "@components/*": [
@@ -15,7 +19,7 @@
       "@layouts/*": [
         "src/layouts/*"
       ],
-      "@types/*": [
+      "types/*": [
         "src/types/*"
       ],
     }
