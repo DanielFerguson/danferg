@@ -1,0 +1,151 @@
+---
+// Types
+import type Project from "@types/Project";
+
+// Components
+import BaseLayout from "@layouts/BaseLayout.astro";
+import NavBar from "@components/NavBar.astro";
+import Newsletter from "@components/Newsletter.astro";
+
+// Data
+const projects = await Astro.glob<Project>("./*.md");
+---
+
+<BaseLayout title="Projects" description="" imageUrl="">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <NavBar />
+    </div>
+
+    <!-- Section: Hero -->
+    <div class="relative bg-indigo-800">
+        <div class="absolute inset-0">
+            <img
+                class="h-full w-full object-cover"
+                src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80&sat=-100"
+                alt=""
+            />
+            <div
+                class="absolute inset-0 bg-indigo-800 mix-blend-multiply"
+                aria-hidden="true"
+            >
+            </div>
+        </div>
+        <div
+            class="relative mx-auto max-w-7xl py-24 px-4 sm:py-32 sm:px-6 lg:px-8"
+        >
+            <h1
+                class="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl"
+            >
+                Projects
+            </h1>
+            <p class="mt-6 max-w-3xl text-xl text-indigo-100">
+                From my work on the digital-first charity focusing on creating
+                tools for preperations, duration and restoration in natural
+                disasters, to creating innovative methods for valuing land which
+                considers the the agricultural value to surrounding areas;
+                there's never a challenge I won't take on.
+            </p>
+        </div>
+    </div>
+
+    <Newsletter />
+
+    <!-- TODO Section: Projects List -->
+    <div
+        class="relative flex flex-col gap-24 overflow-hidden bg-white pt-16 pb-32"
+    >
+        {
+            projects.map((project, index) => {
+                return index % 2 === 0 ? (
+                    <div class="relative">
+                        <div class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8">
+                            <div class="mx-auto max-w-xl px-4 sm:px-6 lg:mx-0 lg:max-w-none lg:py-16 lg:px-0">
+                                <div>
+                                    <img
+                                        src={project.frontmatter.iconUrl}
+                                        class="h-12 w-auto"
+                                    />
+                                    <div class="mt-6">
+                                        <h2 class="text-3xl font-bold tracking-tight text-gray-900">
+                                            {project.frontmatter.title}
+                                        </h2>
+                                        <p class="mt-4 text-lg text-gray-500">
+                                            {project.frontmatter.description}
+                                        </p>
+                                        <div class="mt-6">
+                                            <a
+                                                href="#"
+                                                class="inline-flex rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
+                                            >
+                                                Read more
+                                            </a>
+                                            <a
+                                                href="#"
+                                                class="inline-flex rounded-md border border-transparent px-4 py-2 text-base font-medium text-indigo-700"
+                                            >
+                                                Check out
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-12 sm:mt-16 lg:mt-0">
+                                <div class="-mr-48 pl-4 sm:pl-6 md:-mr-16 lg:relative lg:m-0 lg:h-full lg:px-0">
+                                    <img
+                                        class="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
+                                        src={project.frontmatter.imageUrl}
+                                        alt="Inbox user interface"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                ) : (
+                    <div>
+                        <div class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8">
+                            <div class="mx-auto max-w-xl px-4 sm:px-6 lg:col-start-2 lg:mx-0 lg:max-w-none lg:py-32 lg:px-0">
+                                <div>
+                                    <img
+                                        src={project.frontmatter.iconUrl}
+                                        class="h-12 w-auto"
+                                    />
+                                    <div class="mt-6">
+                                        <h2 class="text-3xl font-bold tracking-tight text-gray-900">
+                                            {project.frontmatter.title}
+                                        </h2>
+                                        <p class="mt-4 text-lg text-gray-500">
+                                            {project.frontmatter.description}
+                                        </p>
+                                        <div class="mt-6">
+                                            <a
+                                                href="#"
+                                                class="inline-flex rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
+                                            >
+                                                Read more
+                                            </a>
+                                            <a
+                                                href="#"
+                                                class="inline-flex rounded-md border border-transparent px-4 py-2 text-base font-medium text-indigo-700"
+                                            >
+                                                Check out
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-12 sm:mt-16 lg:col-start-1 lg:mt-0">
+                                <div class="-ml-48 pr-4 sm:pr-6 md:-ml-16 lg:relative lg:m-0 lg:h-full lg:px-0">
+                                    <img
+                                        class="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
+                                        src={project.frontmatter.imageUrl}
+                                        alt="Customer profile user interface"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                );
+            })
+        }
+    </div>
+</BaseLayout>

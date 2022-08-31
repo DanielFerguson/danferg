@@ -2,18 +2,18 @@
 // Data
 const footer = {
     site: [
-        { name: "Skills", link: "/#skills" },
-        { name: "Work", link: "/#work" },
         { name: "Projects", link: "/projects" },
         { name: "Articles", link: "/articles" },
         { name: "Newsletters", link: "/newsletters" },
+        { name: "RSS", link: "#" },
+        { name: "Sitemap", link: "/sitemap-0.xml" },
     ],
     solutions: [
-        { name: "Websites", link: "#" },
-        { name: "Mobile Apps", link: "#" },
-        { name: "Data & Insights", link: "#" },
-        { name: "Cloud (AWS)", link: "#" },
-        { name: "Consulting", link: "#" },
+        { name: "Websites", link: "https://aaiga.com.au/?ref=danferg" },
+        { name: "Mobile Apps", link: "https://aaiga.com.au/?ref=danferg" },
+        { name: "Data & Insights", link: "https://aaiga.com.au/?ref=danferg" },
+        { name: "Cloud (AWS)", link: "https://aaiga.com.au/?ref=danferg" },
+        { name: "Consulting", link: "/contact" },
     ],
     startups: [
         { name: "Observer", link: "https://useobserver.com" },
@@ -23,9 +23,9 @@ const footer = {
         { name: "Swin Lead", link: "https://swinlead.com" },
     ],
     mentorship: [
-        { name: "Startups", link: "#" },
-        { name: "Entreprenuers", link: "#" },
-        { name: "Career Change", link: "#" },
+        { name: "Startups", link: "/mentorship" },
+        { name: "Entreprenuers", link: "/mentorship" },
+        { name: "Career Change", link: "/mentorship" },
     ],
 };
 ---
@@ -152,12 +152,17 @@ const footer = {
                     weekly.
                 </p>
             </div>
-            <form class="mt-4 sm:flex sm:max-w-md lg:mt-0">
+            <form
+                class="mt-4 sm:flex sm:max-w-md lg:mt-0"
+                data-sendstack-form
+                action="https://getsendstack.com/forms/f0be0db7-8be7-4d6f-8ae7-eea8f60a6c5f/subscribers"
+                method="post"
+            >
                 <label for="email-address" class="sr-only">Email address</label>
                 <input
                     type="email"
-                    name="email-address"
-                    id="email-address"
+                    name="email"
+                    id="email"
                     autocomplete="email"
                     required
                     class="w-full min-w-0 appearance-none rounded-md border border-gray-300 bg-white py-2 px-4 text-base text-gray-900 placeholder-gray-500 focus:border-indigo-500 focus:placeholder-gray-400 focus:outline-none focus:ring-indigo-500 sm:max-w-xs"
