@@ -17,24 +17,26 @@
 
 ### Stage 2
 
-- [ ] Re-add SEO tags
+- [x] Re-add SEO tags
 - [ ] Re-add the JSON+LD tags
-- [ ] ...yfocus
-- [ ] ...observer
-- [ ] ...land-index
-- [ ] ...guardian
-- [ ] ...real-news
-- [ ] ...mates-motivate
-- [ ] ...otter
-- [ ] ...scribe
-- [ ] ...helping-group
-- [ ] ...helping-homes
-- [ ] ...whats-my-impact
-- [ ] ...support-them
-- [ ] ...corncob
-- [ ] ...bullseye
-- [ ] ...polibin
-- [ ] ...polgag
+- [ ] Project pages
+    - [ ] yFocus
+    - [ ] Observer
+    - [ ] Land Index
+    - [ ] Guardian
+    - [ ] Real News
+    - [ ] Mates Motivate
+    - [ ] Otter
+    - [ ] Scribe
+    - [ ] Helping Group
+    - [ ] Helping Homes
+    - [ ] Whats My Impact
+    - [ ] Support Them
+    - [ ] Corncob
+    - [ ] Bullseye
+    - [ ] Polibin
+    - [ ] Polgag
+- [ ] Add testimonies section
 
 ### Stage 3
 
