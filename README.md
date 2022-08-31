@@ -18,7 +18,6 @@
 ### Stage 2
 
 - [x] Re-add SEO tags
-- [ ] Re-add the JSON+LD tags
 - [ ] Project pages
     - [ ] yFocus
     - [ ] Observer
@@ -40,6 +39,7 @@
 
 ### Stage 3
 
+- [ ] Re-add the JSON+LD tags
 - [ ] /12-startups
 - [ ] /talks
 - [ ] /talks/concept-to-production
