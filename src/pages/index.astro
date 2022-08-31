@@ -8,11 +8,12 @@
 import type Article from "@types/Article";
 import type Project from "@types/Project";
 import type Talk from "@types/Talk";
+import type SEO from "@types/SEO";
 
 // Components
 import dayjs from "dayjs";
 import { Image } from "@astrojs/image/components";
-import Layout from "../layouts/BaseLayout.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
 import Newsletter from "@components/Newsletter.astro";
 
 // Assets
@@ -23,6 +24,16 @@ import NoCode from "@images/danferg.jpg";
 import SwinLead from "@images/talks/swinlead.png";
 
 // Data
+const SEO: SEO = {
+	title: "Dan Ferg",
+	description:
+		"A solutions architect and software developer with an understanding of holistic design; seeking to create digitally enabled change for good.",
+	imageUrl: "/assets/snow.jpg",
+	openGraph: {
+		type: "website",
+	},
+};
+
 const navigation = [
 	{ name: "Projects", href: "/projects" },
 	{ name: "Talks", href: "#talks" },
@@ -76,11 +87,7 @@ const talks: Array<Talk> = [
 ];
 ---
 
-<Layout
-	title="Your friendly neighbourhood social entrepreneur | Dan Ferg"
-	description="A solutions architect and software developer with an understanding of holistic design; seeking to create digitally enabled change for good."
-	imageUrl="https://danferg.com/snow.jpg"
->
+<BaseLayout {...SEO}>
 	<main>
 		<!-- Section: Hero -->
 		<div class="relative overflow-hidden bg-white">
@@ -417,4 +424,4 @@ const talks: Array<Talk> = [
 
 		<!-- TODO Section: Mentorship -->
 	</main>
-</Layout>
+</BaseLayout>

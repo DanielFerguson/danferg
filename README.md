@@ -13,10 +13,12 @@
 - [x] /contact
 - [x] /404
 - [x] Add Fathom Analytics
-- [ ] Add MailChimp signup functionality
+- [x] Add SendStack newsletter signup
 
 ### Stage 2
 
+- [ ] Re-add SEO tags
+- [ ] Re-add the JSON+LD tags
 - [ ] ...yfocus
 - [ ] ...observer
 - [ ] ...land-index
@@ -33,7 +35,6 @@
 - [ ] ...bullseye
 - [ ] ...polibin
 - [ ] ...polgag
-- [ ] Re-add the JSON+LD tags
 
 ### Stage 3
 

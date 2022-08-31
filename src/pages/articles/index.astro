@@ -1,6 +1,7 @@
 ---
 // Types
 import type Article from "@types/Article";
+import type SEO from "@types/SEO";
 
 // Imports
 import dayjs from "dayjs";
@@ -11,6 +12,16 @@ import NavBar from "@components/NavBar.astro";
 import Newsletter from "@components/Newsletter.astro";
 
 // Data
+const SEO: SEO = {
+    title: "Every now and then I like to write | Dan Ferg",
+    description:
+        "It's a great way to share knowledge, remember how far we've come and create dialogue on topics that interest me or are near to my heart.",
+    imageUrl: "/assets/snow.jpg",
+    openGraph: {
+        type: "website",
+    },
+};
+
 const articles = await Astro.glob<Article>("./*.md");
 const sortedArticles = articles.sort(function (a, b) {
     return (
@@ -20,11 +31,7 @@ const sortedArticles = articles.sort(function (a, b) {
 });
 ---
 
-<BaseLayout
-    title="Every now and then I like to write | Dan Ferg"
-    description="It's a great way to share knowledge, remember how far we've come and create dialogue on topics that interest me or are near to my heart."
-    imageUrl=""
->
+<BaseLayout {...SEO}>
     <!-- Section: Header -->
     <div class="mx-auto max-w-7xl">
         <NavBar />

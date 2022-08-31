@@ -1,6 +1,7 @@
 ---
 // Types
 import type Project from "@types/Project";
+import type SEO from "@types/SEO";
 
 // Components
 import BaseLayout from "@layouts/BaseLayout.astro";
@@ -8,10 +9,20 @@ import NavBar from "@components/NavBar.astro";
 import Newsletter from "@components/Newsletter.astro";
 
 // Data
+const SEO: SEO = {
+    title: "There's never a challenge I won't take on | Dan Ferg",
+    description:
+        "From my work on the digital-first charity, to creating innovative methods for valuing land; there's never a channelge I won't take on.",
+    imageUrl: "/assets/snow.jpg",
+    openGraph: {
+        type: "website",
+    },
+};
+
 const projects = await Astro.glob<Project>("./*.md");
 ---
 
-<BaseLayout title="Projects" description="" imageUrl="">
+<BaseLayout {...SEO}>
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <NavBar />
     </div>
