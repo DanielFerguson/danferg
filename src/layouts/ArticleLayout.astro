@@ -1,14 +1,23 @@
 ---
 // Props
-
 const { frontmatter } = Astro.props;
 
 // Components
+import type SEO from "@types/SEO";
 import { Image } from "@astrojs/image/components";
 import BaseLayout from "./BaseLayout.astro";
 import WaveIcon from "../images/wave.png";
 
 // Data
+const SEO: SEO = {
+    title: frontmatter.title + " | Dan Ferg",
+    description: frontmatter.description,
+    imageUrl: frontmatter.imageUrl,
+    openGraph: {
+        type: "article",
+    },
+};
+
 const navigation = [
     { name: "Projects", href: "/projects" },
     { name: "Talks", href: "/#talks" },
@@ -17,11 +26,7 @@ const navigation = [
 ];
 ---
 
-<BaseLayout
-    title={frontmatter.title}
-    description={frontmatter.description}
-    imageUrl={frontmatter.imageUrl}
->
+<BaseLayout {...SEO}>
     <!-- Section: Navigation -->
     <header>
         <div

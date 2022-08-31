@@ -18,6 +18,7 @@
 ### Stage 2
 
 - [x] Re-add SEO tags
+- [ ] /mentorship
 - [ ] Project pages
     - [ ] yFocus
     - [ ] Observer
@@ -39,13 +40,12 @@
 
 ### Stage 3
 
-- [ ] Re-add the JSON+LD tags
 - [ ] /12-startups
 - [ ] /talks
 - [ ] /talks/concept-to-production
 - [ ] /talks/nocode
 - [ ] /talks/ncp-dfat-and-helping-group
-- [ ] /mentorship
+- [ ] Re-add the JSON+LD tags
 - [ ] Add RSS feed capabilities to the site for articles and newsletters
 
 ### Stage 4
