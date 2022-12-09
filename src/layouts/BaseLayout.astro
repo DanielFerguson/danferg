@@ -3,7 +3,7 @@ import type SEO from "types/SEO";
 
 export interface Props extends SEO {}
 
-const { title, description, imageUrl, openGraph } = Astro.props;
+const { title, description, imageUrl, openGraph, canonicalUrl } = Astro.props;
 
 // Assets
 import "@fontsource/inter";
@@ -19,7 +19,7 @@ import Footer from "../components/Footer.astro";
 		<link rel="icon" href="/favicon.ico" />
 		<title>{title}</title>
 		<meta name="description" content={description} />
-		<link rel="canonical" href={Astro.url} />
+		<link rel="canonical" href={Astro.url.toString().slice(0, -1)} />
 
 		<!-- OpenGraph -->
 		<meta property="og:type" content={openGraph.type} />

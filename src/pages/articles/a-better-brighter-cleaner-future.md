@@ -6,9 +6,9 @@ date: "2020-12-23"
 imageUrl: https://images.unsplash.com/photo-1522735338363-cc7313be0ae0?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8d2luZCUyMGVuZXJneXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1720
 ---
 
-# A better, brighter, cleaner future.
+## A better, brighter, cleaner future.
 
-## The issue at hand
+### The issue at hand
 
 This is actually something that is very near and dear to my heart. I believe that you have a powerful voice. One of the ways you can be clearly clearly heard is through how you chose to spend your money 💰.
 
@@ -25,7 +25,7 @@ I'm asking you to think over, discuss and act on two crazy simple things.
 
 Find choices that align with your ethics, your values. Make sure that your money is supporting things you love, creating a future that you want to see.
 
-## Ok… but why? 🤷‍♂️
+### Ok… but why? 🤷‍♂️
 
 If this year has shown us anything, it's that the climate crisis is just that — a crisis.
 
@@ -33,7 +33,7 @@ We need to become more proactive with our life choices, and need systemic change
 
 However, I'm not negligent to the fact that we are all very busy. In fact, I'd say this year now more than ever, for some of us at least. So I wanted to help provide two excruciatingly simple things that everyone can do to make a large impact.
 
-## Some options, for your convenience…
+### Some options, for your convenience…
 
 - [Future Super](https://www.futuresuper.com.au/)
 - [Australian Ethical](https://www.australianethical.com.au/)
@@ -42,13 +42,13 @@ However, I'm not negligent to the fact that we are all very busy. In fact, I'd s
 
 However, this list by no means exhausts the list of ethical superannuations operating in Australia. Take a look and see if your super operates alongside your values!
 
-## And some good reading resources
+### And some good reading resources
 
 - [MoneyMag — The 14 greenest and cleanest superannuation funds](https://www.moneymag.com.au/14-greenest-super-funds)
 - [Guardian — Ethical superannuation: what is it, and does it actually work?](https://www.theguardian.com/australia-news/2019/oct/27/ethical-superannuation-what-is-it-and-does-it-actually-work#:~:text=Four%20funds%20in%20Australia%20currently,Australian%20Super%2C%20the%20country's%20largest.)
 - [Canstar — 10 High-Performing Ethical Investment Funds](https://www.canstar.com.au/investor-hub/10-top-ethical-investment-funds/)
 
-## Disclaimer 🚨
+### Disclaimer 🚨
 
 Please note that I am in no way, shape or form a financial advisor. If you have any financial questions about your particular situation, please consult a professional.
 

@@ -1,12 +1,12 @@
 ---
 layout: ../../layouts/ArticleLayout.astro
 title: "What's next?"
-description: "The definitive decade — pretty much a waste of an invaluable chance so far."
+description: "Well, that was the start to the definitive decade... pretty much a waste of an invaluable chance so far, wouldn't you say?"
 date: "2021-11-09"
 imageUrl: https://images.unsplash.com/photo-1609537937459-9a2e947cb16c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=735&q=80
 ---
 
-# What's next?
+## What's next?
 
 The definitive decade — pretty much a waste of an invaluable chance so far.
 
@@ -16,7 +16,7 @@ I often bitterly joke with friends and colleagues that natural disaster recovery
 
 ![Facing the challenge ahead](https://images.unsplash.com/photo-1491555103944-7c647fd857e6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80)
 
-## So, where do we go from here?
+### So, where do we go from here?
 
 This is something that I can't stop thinking about. I remember starting 2020 with the idea of trying to become a leader for the definitive decade. Still, as I take a tally of my personal and professional actions over the past two years, I have indeed fallen short.
 
@@ -24,7 +24,7 @@ My focus has been more on myself and my family. Please do not hear that I am say
 
 \*Please do not read this as I am pivoting away from my family life. Family is first and always will be for me. As I keep family first, I need to refocus my priorities, other than family, to protect what is most important to me; family.
 
-## Why am I thinking about this so much?
+### Why am I thinking about this so much?
 
 As some of you may know, I recently became a husband to the most amazing woman in the world. As horrible as the past year and a half have been, it's been a time that I have enjoyed spending with my wife.
 
@@ -34,7 +34,7 @@ However, as with all serious relationships, the talk about kids come up. Now, we
 
 I'm not alone in this either — surveys show that many others have a similar fear for their future kids, and even some have remorse for having children in the first place. I'm not in a position to go into the profound impact that this skipping of a generation could have on society, but it does keep me up at night.
 
-## What steps am I going to take?
+### What steps am I going to take?
 
 Well, that's an excellent question — and to be honest, I'm not quite sure yet. I want to play to my strengths, understand what I'm good at, where I can bring people together, and the areas that crazy talented people are not already addressing; because, as dire as it seems, I am amazed at all of the excellent work very devoted people are doing around the world.
 
@@ -48,4 +48,4 @@ Please reach out to me if you have any ideas along these lines that you want hel
 
 -
 
-[Climate survey](https://link.springer.com/article/10.1007/s10584-020-02923-y)
+[Climate survey](https://idp.springer.com/authorize?response_type=cookie&client_id=springerlink&redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs10584-020-02923-y)

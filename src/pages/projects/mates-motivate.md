@@ -5,6 +5,5 @@ description: Achieve your goals, celebrate success. Take the next step in findin
 tags: []
 featured: true
 externalUrl: https://matesmotivate.com
-imageUrl: /assets/projects/mates-motivate/screenshot.png
+imageUrl: /assets/projects/mates-motivate/screenshot.webp
 ---
-

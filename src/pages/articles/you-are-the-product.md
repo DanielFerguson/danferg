@@ -6,9 +6,9 @@ date: "2021-01-02"
 imageUrl: https://images.unsplash.com/photo-1565591452825-67d6b7df1d47?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8c3B5fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80
 ---
 
-# You are the product.
+## You are the product.
 
-## Preface
+### Preface
 
 Alright, well that's quite a statement. What do I mean by that? We live in a world surrounded by ‘free'. Free shipping, free software, etc. However — all of these things boil down to the need to make a profit. The fallacy of ‘free' has blinded us by and large to the fact that we are paying for it, just in ways we don't immediately see.
 
@@ -28,11 +28,11 @@ Side note: a good read about what a future that ignores the right to individuals
 
 But as we move into a new year — I propose we do something different. Instead of 'new year, new me', what if we say ‘new year, better me'? In order to take the first step, I propose that we take a digital cleanse; to make sure we're safe, secure, and that we stop being ‘the product'.
 
-## Our digital cleanse 🤖
+### Our digital cleanse 🤖
 
 First off, let's start with the basics…
 
-### Antivirus 🦠
+#### Antivirus 🦠
 
 Hey, we're all guilty of it and we all have our own ‘reasons' that we've used to justify to ourselves why we think that we don't need to run that scan.
 
@@ -48,11 +48,11 @@ Hey, we're all guilty of it and we all have our own ‘reasons' that we've used 
 - [Bitdefender](https://www.bitdefender.com.au/)
 - [Kaspersky](https://www.kaspersky.com.au/)
 - [MalwareBytes](https://www.malwarebytes.com/)
-- [Avast](https://www.avast.com/)
+- [Avast](https://www.avast.com/en-au/index)
 
 One last thing: **please make sure to scan your phone!** iPhone, Android; don't care. Your phones are computers, make sure that you scan them!
 
-### Use privacy-first software 🥸
+#### Use privacy-first software 🥸
 
 The next thing is to change which search engine you're using, and your default browser.
 
@@ -65,7 +65,7 @@ If you really want to take back your identity, change your default search engine
 1. [DuckDuckGo](https://duckduckgo.com/) — this is the more privacy-first alternative. I've been using DDG for a while now, and haven't really needed to switch back to Google. One of the main issues with alternatives that I've found is trying to find very technical solutions websites; this is where others struggled and Google thrives. This hasn't been an issue for DDG, so give it a go!
 2. [Ecosia](https://www.ecosia.org/?c=en) — this one isn't for everyone, but each time you search, a portion of the ad revenue generated actually **goes towards planting trees!** It's still in it's infancy phase, and has a lot of growing to do, but it is a great option for those that want to actively be more sustainable.
 
-### Update all of the thing ✨
+#### Update all of the thing ✨
 
 You know that update window that keeps popping up, and you keep saying “Try my tomorrow”? Well today's the day. You're going to commit to updating all of your devices.
 
@@ -79,7 +79,7 @@ Ok, now we more into the more involved solutions.
 
 These take a little bit more effort and time, but please believe me — they are becoming increasingly important; and I'll tell you why.
 
-### Password Managers! 🗂
+#### Password Managers! 🗂
 
 I will be straight with you — they are a bit of a pain to setup, but **you will never need to remember a password EVER AGAIN..** well, maybe just one.
 
@@ -97,17 +97,17 @@ And best of all, no two passwords are the same. So the next time a service that 
 - [LastPass](https://www.lastpass.com/)
 - [Dashlane](https://www.dashlane.com/)
 
-### Use a VPN ☁️
+#### Use a VPN ☁️
 
 This is simple — protect your internet traffic. If you haven't already been bombarded with NordVPN ads on YouTube… how?!
 
 Especially if you are using public WiFi, please consider using something that will stop hackers intercepting your details. Just because you haven't typed your password or banking details doesn't mean that it isn't being sent over the network. You'd be surprised what actually gets passed between your phone and services.
 
-- [Mozilla VPN](https://vpn.mozilla.org/)
+- [Mozilla VPN](https://www.mozilla.org/en-US/products/vpn/)
 - [NordVPN](https://nordvpn.com/)
 - [ExpressVPN](https://www.expressvpn.com/)
 
-## “If you have nothing to hide, you have nothing to fear”
+### “If you have nothing to hide, you have nothing to fear”
 
 As promised, a list of readings if you are interested in this topic.
 
