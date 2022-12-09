@@ -6,5 +6,5 @@ tags: []
 featured: true
 externalLink: https://innovative-land-index.vercel.app/
 imageUrl: /assets/projects/land-index/screenshot.png
+canonicalUrl: /projects/land-index
 ---
-

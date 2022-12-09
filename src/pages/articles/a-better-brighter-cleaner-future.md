@@ -4,6 +4,7 @@ title: "A better, brighter, cleaner future."
 description: "I believe that you have a powerful voice. One of the ways you can be clearly clearly heard is through how you chose to spend your money."
 date: "2020-12-23"
 imageUrl: https://images.unsplash.com/photo-1522735338363-cc7313be0ae0?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8d2luZCUyMGVuZXJneXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1720
+canonicalUrl: /articles/a-better-brighter-cleaner-future
 ---
 
 ## A better, brighter, cleaner future.

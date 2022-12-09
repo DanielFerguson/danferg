@@ -6,5 +6,5 @@ tags: []
 featured: true
 externalLink: https://helping.group
 imageUrl: /assets/projects/helping-group/screenshot.png
+canonicalUrl: /projects/helping-group
 ---
-

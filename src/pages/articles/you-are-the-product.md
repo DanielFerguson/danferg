@@ -4,6 +4,7 @@ title: "You are the product."
 description: "We live in a world surrounded by ‘free'. Free shipping, free software, etc. However — all of these things boil down to the need to make a profit."
 date: "2021-01-02"
 imageUrl: https://images.unsplash.com/photo-1565591452825-67d6b7df1d47?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8c3B5fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80
+canonicalUrl: /articles/you-are-the-product
 ---
 
 ## You are the product.

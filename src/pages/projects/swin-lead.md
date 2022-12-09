@@ -6,5 +6,5 @@ tags: []
 featured: true
 externalUrl:
 imageUrl: /assets/projects/swin-lead/screenshot.png
+canonicalUrl: /projects/swin-lead
 ---
-

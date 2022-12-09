@@ -6,5 +6,5 @@ tags: []
 featured: true
 externalLink: https://useguardian.app
 imageUrl: /assets/projects/guardian/screenshot.png
+canonicalUrl: /projects/guardian
 ---
-

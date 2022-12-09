@@ -4,6 +4,7 @@ title: "What's next?"
 description: "Well, that was the start to the definitive decade... pretty much a waste of an invaluable chance so far, wouldn't you say?"
 date: "2021-11-09"
 imageUrl: https://images.unsplash.com/photo-1609537937459-9a2e947cb16c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=735&q=80
+canonicalUrl: /articles/whats-next
 ---
 
 ## What's next?

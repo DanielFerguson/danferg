@@ -6,4 +6,5 @@ tags: []
 featured: true
 externalUrl: https://matesmotivate.com
 imageUrl: /assets/projects/mates-motivate/screenshot.webp
+canonicalUrl: /projects/mates-motivate
 ---

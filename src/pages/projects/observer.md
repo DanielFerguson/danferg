@@ -6,5 +6,5 @@ tags: []
 featured: true
 externalLink: https://useobserver.com
 imageUrl: /assets/projects/observer/screenshot.png
+canonicalUrl: /projects/observer
 ---
-

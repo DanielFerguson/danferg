@@ -3,58 +3,52 @@ import type SEO from "types/SEO";
 
 export interface Props extends SEO {}
 
-const { title, description, imageUrl, openGraph } = Astro.props;
+const { title, description, imageUrl, openGraph, canonicalUrl } = Astro.props;
 
-// Assets
 import "@fontsource/inter";
-
-// Components
 import Footer from "../components/Footer.astro";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" href="/favicon.ico" />
-		<title>{title}</title>
-		<meta name="description" content={description} />
-		<link rel="canonical" href={Astro.url} />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="/favicon.ico" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalUrl} />
 
-		<!-- OpenGraph -->
-		<meta property="og:type" content={openGraph.type} />
-		<meta property="og:url" content={Astro.url} />
-		<meta property="og:title" content={title} />
-		<meta property="og:description" content={description} />
-		<meta property="og:image" content={imageUrl} />
-		<meta property="og:site_name" content="Dan Ferg" />
+    <!-- OpenGraph -->
+    <meta property="og:type" content={openGraph.type} />
+    <meta property="og:url" content={Astro.url} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={imageUrl} />
+    <meta property="og:site_name" content="Dan Ferg" />
 
-		<!-- Twitter -->
-		<meta property="twitter:card" content="summary_large_image" />
-		<meta property="twitter:url" content={Astro.url} />
-		<meta property="twitter:title" content={title} />
-		<meta property="twitter:description" content={description} />
-		<meta property="twitter:image" content={imageUrl} />
-		<meta property="twitter:creator" content="@thedannyferg" />
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={Astro.url} />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+    <meta property="twitter:image" content={imageUrl} />
+    <meta property="twitter:creator" content="@thedannyferg" />
 
-		<script
-			src="https://cdn.usefathom.com/script.js"
-			data-site="LARYKSES"
-			defer
-		></script>
+    <script src="https://cdn.usefathom.com/script.js" data-site="LARYKSES" defer
+    ></script>
 
-		<script src="https://getsendstack.com/js/form.js" defer async></script>
+    <script src="https://getsendstack.com/js/form.js" defer async></script>
 
-		<style>
-			html,
-			body {
-				font-family: "Inter", sans-serif;
-				scroll-behavior: smooth;
-			}
-		</style>
-	</head>
-	<body>
-		<slot />
-		<Footer />
-	</body>
+    <style>
+      html,
+      body {
+        font-family: "Inter", sans-serif;
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body>
+    <slot />
+    <Footer />
+  </body>
 </html>

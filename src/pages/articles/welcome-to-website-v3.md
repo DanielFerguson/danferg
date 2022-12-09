@@ -4,6 +4,7 @@ title: "Welcome, to Website v3!"
 description: "Why? The last one was outdated, lacked imagination and was built for a different purpose. I wanted to expand my experience with web technologies."
 date: "2019-11-20"
 imageUrl: https://images.unsplash.com/photo-1586071921485-4c493567232c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80
+canonicalUrl: /articles/welcome-to-website-v3
 ---
 
 ### Preface

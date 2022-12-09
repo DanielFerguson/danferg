@@ -4,6 +4,7 @@ title: "Burnout; let's talk about it."
 description: "This year has been the wildest, most productive, most humbling year of my life to date. I completely burned out, and it sucked. Let's talk about it."
 date: "2021-10-19"
 imageUrl: https://images.unsplash.com/photo-1509923261489-fd580b2d9051?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80
+canonicalUrl: /articles/burnout-lets-talk-about-it
 ---
 
 ### Preface
