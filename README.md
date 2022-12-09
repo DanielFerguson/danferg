@@ -10,7 +10,6 @@
 - [x] /articles/[slug]
 - [x] /newsletters
 - [x] /newsletters/[slug]
-- [x] /contact
 - [x] /404
 - [x] Add Fathom Analytics
 - [x] Add SendStack newsletter signup
@@ -19,24 +18,23 @@
 
 - [x] Re-add SEO tags
 - [~] /mentorship
-- [ ] /contact
 - [ ] Project pages
-    - [ ] yFocus
-    - [ ] Observer
-    - [ ] Land Index
-    - [ ] Guardian
-    - [ ] Real News
-    - [ ] Mates Motivate
-    - [ ] Otter
-    - [ ] Scribe
-    - [ ] Helping Group
-    - [ ] Helping Homes
-    - [ ] Whats My Impact
-    - [ ] Support Them
-    - [ ] Corncob
-    - [ ] Bullseye
-    - [ ] Polibin
-    - [ ] Polgag
+  - [ ] yFocus
+  - [ ] Observer
+  - [ ] Land Index
+  - [ ] Guardian
+  - [ ] Real News
+  - [ ] Mates Motivate
+  - [ ] Otter
+  - [ ] Scribe
+  - [ ] Helping Group
+  - [ ] Helping Homes
+  - [ ] Whats My Impact
+  - [ ] Support Them
+  - [ ] Corncob
+  - [ ] Bullseye
+  - [ ] Polibin
+  - [ ] Polgag
 - [ ] Add testimonies section
 
 ### Stage 3
