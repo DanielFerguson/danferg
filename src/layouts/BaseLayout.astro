@@ -16,11 +16,11 @@ import Footer from "../components/Footer.astro";
     <link rel="icon" href="/favicon.ico" />
     <title>{title}</title>
     <meta name="description" content={description} />
-    <link rel="canonical" href={canonicalUrl} />
+    <link rel="canonical" href={`https://danferg.com${canonicalUrl}`} />
 
     <!-- OpenGraph -->
     <meta property="og:type" content={openGraph.type} />
-    <meta property="og:url" content={Astro.url} />
+    <meta property="og:url" content={`https://danferg.com${canonicalUrl}`} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:image" content={imageUrl} />
@@ -28,7 +28,10 @@ import Footer from "../components/Footer.astro";
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content={Astro.url} />
+    <meta
+      property="twitter:url"
+      content={`https://danferg.com${canonicalUrl}`}
+    />
     <meta property="twitter:title" content={title} />
     <meta property="twitter:description" content={description} />
     <meta property="twitter:image" content={imageUrl} />
