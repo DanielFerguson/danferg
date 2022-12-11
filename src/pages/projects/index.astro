@@ -6,7 +6,7 @@ import type SEO from "types/SEO";
 // Components
 import BaseLayout from "@layouts/BaseLayout.astro";
 import NavBar from "@components/NavBar.astro";
-import Newsletter from "@components/Newsletter.astro";
+import Newsletter from "@components/Newsletter";
 
 // Data
 const SEO: SEO = {
@@ -57,7 +57,7 @@ const projects = await Astro.glob<Project>("./*.md");
     </div>
   </div>
 
-  <Newsletter />
+  <Newsletter client:load />
 
   <!-- TODO Section: Projects List -->
   <div

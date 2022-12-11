@@ -9,7 +9,7 @@ import type SEO from "types/SEO";
 import dayjs from "dayjs";
 import { Image } from "@astrojs/image/components";
 import BaseLayout from "../layouts/BaseLayout.astro";
-import Newsletter from "@components/Newsletter.astro";
+import Newsletter from "@components/Newsletter";
 
 // Assets
 import HeroImage from "@images/danferg.webp";
@@ -197,7 +197,7 @@ const talks: Array<Talk> = [
     </div>
 
     <!-- Section: Newsletter CTA -->
-    <Newsletter />
+    <Newsletter client:load />
 
     <!-- TODO Section: 12 Startups in 12 Months -->
 

@@ -5,11 +5,12 @@ import image from "@astrojs/image";
 import sitemap from "@astrojs/sitemap";
 import robotsTxt from "astro-robots-txt";
 import mdx from "@astrojs/mdx";
+import react from "@astrojs/react";
 
 // https://astro.build/config
 export default defineConfig({
   site: "https://danferg.com",
-  integrations: [tailwind(), image(), sitemap(), mdx(), robotsTxt()],
+  integrations: [react(), tailwind(), image(), sitemap(), mdx(), robotsTxt()],
   markdown: {
     remarkPlugins: [remarkReadingTime],
   },

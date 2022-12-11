@@ -6,7 +6,7 @@ import type SEO from "types/SEO";
 import dayjs from "dayjs";
 import BaseLayout from "@layouts/BaseLayout.astro";
 import NavBar from "@components/NavBar.astro";
-import Newsletter from "@components/Newsletter.astro";
+import Newsletter from "@components/Newsletter";
 
 // Data
 const SEO: SEO = {
@@ -116,7 +116,7 @@ const sortedArticles = articles.sort(function (a, b) {
   </div>
 
   <!-- Section: Newsletter -->
-  <Newsletter />
+  <Newsletter client:load />
 
   <!-- Section: Article List -->
   <div
