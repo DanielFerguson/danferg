@@ -5,7 +5,7 @@ const Newsletter = () => {
     e.preventDefault();
 
     const formBody =
-      "userGroup=testing&danferg=true&email=" +
+      "userGroup=danferg&danferg=true&email=" +
       encodeURIComponent(e.target.email.value);
 
     await toast.promise(
