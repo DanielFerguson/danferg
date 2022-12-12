@@ -14,8 +14,8 @@ import Newsletter from "@components/Newsletter";
 // Assets
 import HeroImage from "@images/danferg.webp";
 import WaveIcon from "@images/wave.png";
-import ConceptToProduction from "@images/talks/concept-to-production.webp";
 import NoCode from "@images/danferg.webp";
+import ConceptToProduction from "@images/talks/concept-to-production.webp";
 import SwinLead from "@images/talks/swinlead.webp";
 
 // Data
@@ -53,7 +53,7 @@ const sortedArticles = articles.sort(function (a, b) {
 const talks: Array<Talk> = [
   {
     title: "Building a business in an hour... with no code!",
-    imageUrl: NoCode,
+    image: NoCode,
     category: "Entrepreneurship",
     link: "#",
     date: "2022-08-18",
@@ -63,7 +63,7 @@ const talks: Array<Talk> = [
   },
   {
     title: "Concept to Production",
-    imageUrl: ConceptToProduction,
+    image: ConceptToProduction,
     category: "Entrepreneurship",
     link: "https://www.youtube.com/watch?v=_SZP7QmIIfE",
     date: "2022-05-03",
@@ -73,7 +73,7 @@ const talks: Array<Talk> = [
   },
   {
     title: "SwinLead Leadership Workshop",
-    imageUrl: SwinLead,
+    image: SwinLead,
     category: "Leadership",
     link: "https://www.youtube.com/watch?v=7_aJAvfGNsY",
     date: "2022-04-13",
@@ -350,8 +350,10 @@ const talks: Array<Talk> = [
                 <div class="flex-shrink-0">
                   <Image
                     class="h-64 w-full object-cover"
-                    src={talk.imageUrl}
+                    src={talk.image.src}
                     alt={talk.title}
+                    height={talk.image.height}
+                    width={talk.image.width}
                   />
                 </div>
                 <div class="flex flex-1 flex-col justify-between bg-white p-6">
