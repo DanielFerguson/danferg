@@ -6,7 +6,7 @@ const footer = {
     { name: "Articles", link: "/articles" },
     { name: "Newsletters", link: "/newsletters" },
     // { name: "RSS", link: "#" },
-    { name: "Sitemap", link: "/sitemap.xml" },
+    { name: "Sitemap", link: "/sitemap-index.xml" },
   ],
   solutions: [
     { name: "Websites", link: "https://aaiga.com.au/?ref=danferg" },
@@ -22,11 +22,6 @@ const footer = {
     { name: "Guardian", link: "https://useguardian.app" },
     { name: "Helping Group", link: "https://helping.group" },
     { name: "Swin Lead", link: "https://swinlead.com" },
-  ],
-  mentorship: [
-    { name: "Startups", link: "/mentorship" },
-    { name: "Entreprenuers", link: "/mentorship" },
-    { name: "Career Change", link: "/mentorship" },
   ],
 };
 
@@ -133,7 +128,7 @@ const Footer = () => {
                     ))}
                   </ul>
                 </div>
-                <div className="mt-12 md:mt-0">
+                {/* <div className="mt-12 md:mt-0">
                   <h3 className="text-base font-medium text-gray-900">
                     Mentorship
                   </h3>
@@ -149,7 +144,7 @@ const Footer = () => {
                       </li>
                     ))}
                   </ul>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
