@@ -26,6 +26,7 @@ export default defineConfig({
         "https://danferg.com/projects/observer",
         "https://danferg.com/projects/swin-lead",
         "https://danferg.com/projects/yfocus",
+        "https://danferg.com/projects/airproxy",
         "https://danferg.com/newsletters",
         "https://danferg.com/newsletters/2022-05-09-concept-to-production",
         "https://danferg.com/newsletters/2022-05-16-lets-start-the-week-off-right",
