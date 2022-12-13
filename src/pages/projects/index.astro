@@ -91,7 +91,9 @@ const projects = await Astro.glob<Project>("./*.md");
                         Read more
                       </a>
                       <a
-                        href="#"
+                        href={project.frontmatter.externalLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         class="inline-flex rounded-md border border-transparent px-4 py-2 text-base font-medium text-indigo-700"
                       >
                         Check it out

@@ -7,4 +7,5 @@ export default interface Project {
   externalUrl: string;
   imageUrl: string;
   canonicalUrl: string;
+  externalLink: string;
 }
