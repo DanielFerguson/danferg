@@ -2,9 +2,7 @@
 const { frontmatter } = Astro.props;
 
 import type SEO from "types/SEO";
-import { Image } from "@astrojs/image/components";
 import BaseLayout from "./BaseLayout.astro";
-import WaveIcon from "../images/wave.png";
 
 const SEO: SEO = {
   title: frontmatter.title + " | Dan Ferg",
@@ -28,20 +26,19 @@ const navigation = [
   <!-- Section: Navigation -->
   <header>
     <div
-      class="flex justify-between items-center max-w-7xl mx-auto px-4 py-6 sm:px-6 md:justify-start md:space-x-10 lg:px-8"
+      class="mx-auto flex max-w-7xl items-center justify-between px-4 py-6 sm:px-6 md:justify-start md:space-x-10 lg:px-8"
     >
       <div class="flex justify-start lg:w-0 lg:flex-1">
         <a href="/">
           <span class="sr-only">DanFerg</span>
-          <Image
+          <img
             alt="Dan Ferg"
             class="h-8 w-auto sm:h-10"
-            src={WaveIcon}
-            format="avif"
+            src="/images/wave.png"
           />
         </a>
       </div>
-      <nav class="hidden md:flex space-x-10">
+      <nav class="hidden space-x-10 md:flex">
         {
           navigation.map((item) => (
             <a
@@ -59,7 +56,7 @@ const navigation = [
           Hire me!
         </a>
       </nav>
-      <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
+      <div class="hidden items-center justify-end md:flex md:flex-1 lg:w-0">
       </div>
     </div>
   </header>
@@ -68,14 +65,13 @@ const navigation = [
   <div>
     <main class="relative">
       <div class="absolute inset-x-0 bottom-0 h-1/2"></div>
-      <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-        <div class="relative shadow-xl sm:rounded-2xl sm:overflow-hidden">
+      <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div class="relative shadow-xl sm:overflow-hidden sm:rounded-2xl">
           <div class="absolute inset-0">
-            <Image
-              class="h-full w-full object-cover"
+            <img
+              class="aspect-video h-full w-full object-cover"
               src={frontmatter.imageUrl}
               height={200}
-              aspectRatio={16 / 9}
               alt="People working on laptops"
             />
             <div class="absolute inset-0 bg-indigo-700 mix-blend-multiply">
@@ -83,12 +79,12 @@ const navigation = [
           </div>
           <div class="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
             <h1
-              class="text-center text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl text-white"
+              class="text-center text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl"
             >
               {frontmatter.title}
             </h1>
             <p
-              class="mt-6 max-w-lg mx-auto text-center text-xl text-indigo-200 sm:max-w-3xl"
+              class="mx-auto mt-6 max-w-lg text-center text-xl text-indigo-200 sm:max-w-3xl"
             >
               {frontmatter.description}
             </p>
@@ -99,7 +95,7 @@ const navigation = [
   </div>
 
   <!-- Section: Breadcrumbs -->
-  <div class="max-w-7xl mx-auto lg:px-8 mt-8 mb-12">
+  <div class="mx-auto mt-8 mb-12 max-w-7xl lg:px-8">
     <nav class="flex" aria-label="Breadcrumb">
       <ol role="list" class="flex items-center space-x-4">
         <li>
@@ -164,7 +160,7 @@ const navigation = [
     </nav>
   </div>
 
-  <div class="prose mx-auto px-8 md:px-0 pb-16">
+  <div class="prose mx-auto px-8 pb-16 md:px-0">
     <slot />
   </div>
 </BaseLayout>

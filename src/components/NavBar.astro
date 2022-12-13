@@ -1,8 +1,4 @@
 ---
-import { Image } from "@astrojs/image/components";
-
-import WaveIcon from "@images/wave.png";
-
 const navigation = [
   { name: "Projects", href: "/projects" },
   { name: "Talks", href: "/#talks" },
@@ -19,11 +15,11 @@ const navigation = [
     <div class="flex w-full items-center justify-between md:w-auto">
       <a href="/">
         <span class="sr-only">Dan Ferg</span>
-        <Image
+        <img
           alt="Dan Ferg"
           class="h-8 w-auto sm:h-10"
-          src={WaveIcon}
-          format="webp"
+          src="/images/wave.png"
+          format="png"
         />
       </a>
     </div>

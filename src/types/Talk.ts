@@ -1,6 +1,6 @@
 export default interface Talk {
   title: string;
-  image: ImageMetadata;
+  image: string;
   category: string;
   link: string;
   date: string;
