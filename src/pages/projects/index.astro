@@ -24,11 +24,11 @@ const projects = await Astro.glob<Project>("./*.md");
 ---
 
 <BaseLayout {...SEO}>
-  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+  <div class="mx-auto max-w-7xl sm:px-12">
     <NavBar />
   </div>
 
-  <!-- Section: Hero -->
+  <!-- Hero -->
   <div class="relative bg-indigo-800">
     <div class="absolute inset-0">
       <img
@@ -42,7 +42,7 @@ const projects = await Astro.glob<Project>("./*.md");
       >
       </div>
     </div>
-    <div class="relative mx-auto max-w-7xl py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
+    <div class="relative mx-auto max-w-7xl py-24 px-4 sm:py-40 sm:px-6 lg:px-8">
       <h1
         class="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl"
       >
@@ -57,11 +57,12 @@ const projects = await Astro.glob<Project>("./*.md");
     </div>
   </div>
 
+  <!-- Newsletter -->
   <Newsletter client:load />
 
-  <!-- TODO Section: Projects List -->
+  <!-- Projects List -->
   <div
-    class="relative flex flex-col gap-24 overflow-hidden bg-white pt-16 pb-32"
+    class="relative flex flex-col gap-y-32 overflow-hidden bg-white pt-32 pb-32"
   >
     {
       projects.map((project, index) => {

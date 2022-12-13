@@ -8,11 +8,16 @@ import mdx from "@astrojs/mdx";
 import react from "@astrojs/react";
 
 // https://astro.build/config
+import vercel from "@astrojs/vercel/serverless";
+
+// https://astro.build/config
 export default defineConfig({
   site: "https://danferg.com",
   integrations: [react(), tailwind(), image(), sitemap(), mdx(), robotsTxt()],
   markdown: {
-    remarkPlugins: [remarkReadingTime],
+    remarkPlugins: [remarkReadingTime]
   },
   trailingSlash: "never",
+  output: "server",
+  adapter: vercel()
 });
