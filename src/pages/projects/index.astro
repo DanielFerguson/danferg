@@ -85,7 +85,7 @@ const projects = await Astro.glob<Project>("./*.md");
                     </p>
                     <div class="mt-6">
                       <a
-                        href="#"
+                        href={project.frontmatter.canonicalUrl}
                         class="inline-flex rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
                       >
                         Read more
@@ -94,7 +94,7 @@ const projects = await Astro.glob<Project>("./*.md");
                         href="#"
                         class="inline-flex rounded-md border border-transparent px-4 py-2 text-base font-medium text-indigo-700"
                       >
-                        Check out
+                        Check it out
                       </a>
                     </div>
                   </div>
